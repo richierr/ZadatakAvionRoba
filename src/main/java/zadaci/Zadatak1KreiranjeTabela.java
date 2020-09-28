@@ -12,8 +12,11 @@ import java.sql.SQLException;
 public class Zadatak1KreiranjeTabela {
     public static void main(String[] args) {
         try(ConnectionSource conn=new JdbcConnectionSource(Konstante.BAZA_URL)){
+
             TableUtils.dropTable(conn, Roba.class,true);
             TableUtils.dropTable(conn, Avion.class,true);
+
+
 
             TableUtils.createTable(conn,Avion.class);
             TableUtils.createTable(conn,Roba.class);

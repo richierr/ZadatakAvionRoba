@@ -25,7 +25,7 @@ public class Avion {
     private int raspon_krila;
 
 
-    @ForeignCollectionField(foreignFieldName = "robaId")
+    @ForeignCollectionField(foreignFieldName = "avion")
     private ForeignCollection<Roba> roba;
 
 
